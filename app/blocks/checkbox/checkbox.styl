@@ -1,0 +1,16 @@
+.checkbox
+
+	&__input
+		display none
+
+	&__input + .checkbox__label .checkbox__icon
+		display inline-block
+		retinaSprite $boxunchecked_group
+		cursor pointer
+
+	&__input:checked + .checkbox__label .checkbox__icon
+		retinaSprite $boxchecked_group
+
+	&__icon
+		position relative
+		top 6px

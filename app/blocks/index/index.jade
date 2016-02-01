@@ -1,0 +1,14 @@
+include ../page/page
+include ../wrap/wrap
+include ../header/header
+include ../main-title/main-title
+include ../content/content
+include ../scripts/scripts
+
+mixin index()
+	+page
+		+wrap
+			+header
+			+main-title
+			+content
+		+scripts(['app.min.js'])

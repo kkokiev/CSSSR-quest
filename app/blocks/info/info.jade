@@ -1,0 +1,32 @@
+mixin info()
+	+b.info&attributes(attributes)
+
+		+e.line
+			+e('p').question
+				| Полное ФИО
+			+e('p').answer
+				| Кононенко Константин Олегович
+
+		+e.line
+			+e('p').question
+				| Год рождения
+			+e('p').answer
+				| 1987
+
+		+e.line
+			+e('p').question
+				| Место жительства
+			+e('p').answer
+				| г.Боярка, Украина
+
+		+e.line
+			+e('p').question
+				| Скайп
+			+e('p').answer.info__answer_bg_line2
+				| kaeserkiev
+
+		+e.line
+			+e('p').question
+				| Почта
+			+e('p').answer.info__answer_bg_line2
+				| constantine.kononenko@gmail.com

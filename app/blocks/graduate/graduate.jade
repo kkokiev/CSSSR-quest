@@ -1,0 +1,16 @@
+include ../radio/radio
+
+mixin graduate()
+	+b.graduate&attributes(attributes)
+		+e('p').text
+			| Выпускник &nbsp;
+			+e('a').link(href='https://htmlacademy.ru/')
+				| htmlacademy.ru
+
+		+e.radio-group
+			+radio('radio1', 'htmlacademy', '')
+				|  Да
+
+		+e.radio-group
+			+radio('radio2', 'htmlacademy', 'checked')
+				|  Нет

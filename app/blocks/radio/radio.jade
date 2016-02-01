@@ -1,0 +1,6 @@
+mixin radio(inputid, name, status)
+	+b.radio&attributes(attributes)
+		+e('input').input(type='radio' id='#{inputid}' name='#{name}' checked=(status ? "checked" : undefined))
+		+e('label').label(for='#{inputid}')
+			+e('span').icon
+			block

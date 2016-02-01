@@ -1,0 +1,69 @@
+include ../checkbox/checkbox
+
+mixin skills()
+	+b.skills&attributes(attributes)
+
+		+e('h2').title
+			| Практические навыки
+
+		+e('p').intro
+			| Отметьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+
+		+e('ul').col
+			+checkbox('col1-ch1', 'checked')
+				| Методология БЭМ
+
+			+checkbox('col1-ch2', 'checked')
+				| jQuery
+
+			+checkbox('col1-ch3')
+				| Использую GRUNT
+
+			+checkbox('col1-ch4')
+				| HAML
+
+			+checkbox('col1-ch5', 'checked')
+				| SASS
+
+			+checkbox('col1-ch6', 'checked')
+				| LESS
+
+			+checkbox('col1-ch7')
+				| CoffeeScript
+
+
+		+e.col
+			+checkbox('col2-ch1', 'checked')
+				| Jade
+
+			+checkbox('col2-ch2', 'checked')
+				| Stylus
+
+			+checkbox('col2-ch3')
+				| Знаю (изучаю) Angular
+
+			+checkbox('col2-ch4', 'checked')
+				| Верстка под Android
+
+			+checkbox('col2-ch5', 'checked')
+				| Верстка под iOS
+
+			+checkbox('col2-ch6', 'checked')
+				| Верстка под Windows Phone
+
+		+e.col
+			+checkbox('col3-ch1', 'checked')
+				| Верстка рассылок
+
+			+checkbox('col3-ch2', 'checked')
+				| Адаптивная верстка
+
+			+checkbox('col3-ch3')
+				| Использую Dropbox
+
+			+checkbox('col3-ch4', 'checked')
+				| Использую Gmail
+
+			+checkbox('col3-ch5', 'checked')
+				| Использую GitHub
+

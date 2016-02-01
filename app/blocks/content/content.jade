@@ -1,0 +1,16 @@
+include ../info/info
+include ../graduate/graduate
+include ../skills/skills
+
+mixin content()
+	+b.content&attributes(attributes)
+
+		+e.info
+			+info
+
+		+e.graduate
+			+graduate
+
+		+e.skills
+			+skills
+

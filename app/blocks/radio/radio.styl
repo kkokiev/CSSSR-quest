@@ -1,0 +1,16 @@
+.radio
+
+	&__input
+		display none
+
+	&__input + .radio__label .radio__icon
+		display inline-block
+		retinaSprite $runchecked_group
+		cursor pointer
+
+	&__input:checked + .radio__label .radio__icon
+		retinaSprite $rchecked_group
+
+	&__icon
+		position relative
+		top 6px

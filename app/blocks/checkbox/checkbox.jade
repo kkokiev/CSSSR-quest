@@ -1,0 +1,6 @@
+mixin checkbox(inputid, status)
+	+b.checkbox&attributes(attributes)
+		+e('input').input(type='checkbox' id='#{inputid}' checked=(status ? "checked" : undefined))
+		+e('label').label(for='#{inputid}')
+			+e('span').icon
+			block
