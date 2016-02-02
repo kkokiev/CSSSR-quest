@@ -9,7 +9,7 @@ mixin skills()
 		+e('p').intro
 			| Отметьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
 
-		+e('ul').col
+		+e.col.skills__col_1
 			+checkbox('col1-ch1', 'checked')
 				| Методология БЭМ
 
@@ -32,7 +32,7 @@ mixin skills()
 				| CoffeeScript
 
 
-		+e.col
+		+e.col.skills__col_2
 			+checkbox('col2-ch1', 'checked')
 				| Jade
 
@@ -42,21 +42,21 @@ mixin skills()
 			+checkbox('col2-ch3')
 				| Знаю (изучаю) Angular
 
-			+checkbox('col2-ch4', 'checked')
+			+checkbox('col2-ch4')
 				| Верстка под Android
 
-			+checkbox('col2-ch5', 'checked')
+			+checkbox('col2-ch5')
 				| Верстка под iOS
 
 			+checkbox('col2-ch6', 'checked')
 				| Верстка под Windows Phone
 
-		+e.col
-			+checkbox('col3-ch1', 'checked')
+		+e.col.skills__col_3
+			+checkbox('col3-ch1')
 				| Верстка рассылок
 
 			+checkbox('col3-ch2', 'checked')
-				| Адаптивная верстка
+				| Адаптивная&nbsp;верстка
 
 			+checkbox('col3-ch3')
 				| Использую Dropbox

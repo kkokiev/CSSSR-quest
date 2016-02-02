@@ -1,0 +1,18 @@
+mixin rangeslider()
+	+b.rangeslider&attributes(attributes)
+		+e('h2').title
+			| Уровень владения JavaScript
+
+		+e.body#slider
+			+e.marker
+		+e.info
+			+e('p').point.rangeslider__point_1
+				| Не владею
+			+e('pn').point.rangeslider__point_2
+				| Использую готовые решения
+			+e('p').point.rangeslider__point_3
+				| Использую готовые решения
+				br
+				| и умею их переделывать
+			+e('p').point.rangeslider__point_4
+				| Пишу сложные скрипты

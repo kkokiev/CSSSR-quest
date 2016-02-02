@@ -1,16 +1,51 @@
 .checkbox
+	position relative
+	min-height 35px
+	padding-top 10px
 
-	&__input
-		display none
+	&__input:not(:checked),
+	&__input:checked
+		position absolute
+		left -9999px
 
-	&__input + .checkbox__label .checkbox__icon
-		display inline-block
-		retinaSprite $boxunchecked_group
+	&__input:not(:checked) + label,
+	&__input:checked + label
+		// position relative
+		padding-left 28px
 		cursor pointer
 
-	&__input:checked + .checkbox__label .checkbox__icon
-		retinaSprite $boxchecked_group
+	/* checkbox aspect */
+	&__input:not(:checked) + label:before,
+	&__input:checked + label:before {
+		content ''
+		position absolute
+		top 10px
+		left 0
+		retinaSprite $boxunchecked_group
 
-	&__icon
-		position relative
-		top 6px
+	}
+
+	/* checked mark aspect */
+	&__input:not(:checked) + label:after,
+	&__input:checked + label:after {
+		content ''
+		position absolute
+		top 0
+		left 0
+		retinaSprite $boxchecked_group
+	}
+
+	/* checked mark aspect changes */
+	&__input:not(:checked) + label:after
+		opacity 0
+
+	&__input:checked + label:after
+		opacity 1
+
+	&__label
+		display block
+		color dark
+		font-family ptsansbold
+		font-size 21px
+		line-height 25px
+		font-weight 700

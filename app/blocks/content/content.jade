@@ -1,6 +1,7 @@
 include ../info/info
 include ../graduate/graduate
 include ../skills/skills
+include ../rangeslider/rangeslider
 
 mixin content()
 	+b.content&attributes(attributes)
@@ -14,3 +15,13 @@ mixin content()
 		+e.skills
 			+skills
 
+		+e.rangeslider
+			+rangeslider
+
+		+e.date
+			.info
+				.info__line
+					p.info__question
+						| Дата заполнения
+					p.info__answer.info__answer_short
+						| 02.02.2016
